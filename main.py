@@ -1,10 +1,11 @@
-a = 10
-b = 4
+nome = input("Seu nome: ")
+nota1 = float(input("Nota 1: "))
+nota2 = float(input("Nota 2: "))
+nota3 = float(input("Nota 3: "))
+nota4 = float(input("Nota 4: "))
+nota5 = float(input("Nota 5: "))
 
-print(f"{a} + {b} = {a + b}")
-print(f"{a} - {b} = {a - b}")
-print(f"{a} x {b} = {a * b}")
-print(f"{a} / {b} = {a / b}")
-print(f"{a} // {b} = {a // b}")
-print(f"{a} % {b} = {a % b}")
-print(f"{a} ** {b} = {a ** b}")
+
+media = nota1 + nota2 + nota3 + nota4 + nota5 / 5
+
+print(f"{nome}, sua média é {media}.")
