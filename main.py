@@ -1,15 +1,15 @@
-peso = float(input("Digite seu peso em kg: "))
-altura = float(input("Digite sua altura em metros (ex: 1.75): "))
+idade = int(input("Digite sua idade: "))
 
-imc = peso / (altura ** 2)
+if idade <= 12:
+    print("Criança")
 
-print(f"Seu IMC é: {imc:.2f}")
+elif idade <= 17:
+    print("Adolecente")
 
-if imc < 18.5:
-    print("Abaixo do peso")
-elif imc < 25:
-    print("Peso normal")
-elif imc < 30:
-    print("Sobrepeso")
+elif idade <= 59:
+    print("Adulto")
+
+elif idade >= 60:
+    print("Idoso")
 else:
-    print("Obesidade")
+    print("Inválida")
