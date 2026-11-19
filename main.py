@@ -1,25 +1,15 @@
-num1 = float(input("Digite o primeiro numero: "))
-num2 = float(input("Digite o segundo numero: "))
+peso = float(input("Digite seu peso em kg: "))
+altura = float(input("Digite sua altura em metros (ex: 1.75): "))
 
-operacao = input("Escolha a operação desejada (+, -, *, /): ")
+imc = peso / (altura ** 2)
 
-if operacao == "+":
-    resultado = num1 + num2
-    print(f"Resultado: {resultado:.2f}")
+print(f"Seu IMC é: {imc:.2f}")
 
-if operacao == "-":
-    resultado = num1 - num2
-    print(f"resultado: {resultado:.2f}")
-
-    if operacao == "*":
-        resultado = num1 * num2
-        print(f"resultado: {resultado:.2f}")
-
-    elif operacao == "/":
-if num2 != 0:
-    resultado = num1 / num2
-    print(f"resultado: {resultado:.2f}")
+if imc < 18.5:
+    print("Abaixo do peso")
+elif imc < 25:
+    print("Peso normal")
+elif imc < 30:
+    print("Sobrepeso")
 else:
-    print("Erro! Não pode dividir por zero!")
-else:
-print("Operação inválida!")
+    print("Obesidade")
