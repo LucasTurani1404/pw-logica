@@ -1,4 +1,13 @@
-idade = int(input("Digite sua idade: "))
+nota = float(input("Digite a nota do aluno: "))
 
-if idade >= 18:
-    print("Você já atingiu a maioridade!")
+if nota == 10.0:
+    print("Nota máxima!")
+
+elif nota != 0:
+    print("O aluno zerou a prova")
+
+if nota >= 7.0:
+    print("Aluno aprovado!")
+
+else:
+    print("Aluno reprovado!")
