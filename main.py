@@ -1,15 +1,19 @@
-idade = int(input("Digite sua idade: "))
+import random
 
-if idade <= 12:
-    print("Criança")
+opcoes = ["pedra", "papel", "tesoura"]
 
-elif idade <= 17:
-    print("Adolecente")
+jogador = input("Escolha pedra, papel ou tesoura: ").lower()
+computador = random.choice(opcoes)
 
-elif idade <= 59:
-    print("Adulto")
+print(f"Computador escolheu: {computador}")
 
-elif idade >= 60:
-    print("Idoso")
+if jogador == computador:
+    print("Empate!")
+elif jogador == "pedra" and computador == "tesoura":
+    print("Você ganhou! Pedra quebra tesoura")
+elif jogador == "papel" and computador == "pedra":
+    print("Você ganhou! Papel embrulha pedra")
+elif jogador == "tesoura" and computador == "papel":
+    print("Você ganhou! Tesoura corta papel")
 else:
-    print("Inválida")
+    print("Você perdeu!")
