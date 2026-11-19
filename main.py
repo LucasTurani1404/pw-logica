@@ -1,19 +1,20 @@
-import random
+a = int(input("Digite o lado A: "))
+b = int(input("Digite o lado B: "))
+c = int(input("Digite o lado C: "))
 
-opcoes = ["pedra", "papel", "tesoura"]
+#etapa 1
+if a < b + c and b < a + c and c < a + b:
 
-jogador = input("Escolha pedra, papel ou tesoura: ").lower()
-computador = random.choice(opcoes)
+    print("Forma um triangulo!")
 
-print(f"Computador escolheu: {computador}")
+    #etapa 2
+    if a == b and b == c:
+        print("Triangulo Equilátero")
 
-if jogador == computador:
-    print("Empate!")
-elif jogador == "pedra" and computador == "tesoura":
-    print("Você ganhou! Pedra quebra tesoura")
-elif jogador == "papel" and computador == "pedra":
-    print("Você ganhou! Papel embrulha pedra")
-elif jogador == "tesoura" and computador == "papel":
-    print("Você ganhou! Tesoura corta papel")
+    elif a == b or a == c or b == c:
+        print("Triangulo isóceles!")
+
+    else:
+        print("Triangulo Escaleno!")
 else:
-    print("Você perdeu!")
+    print("Não forma um triangulo!")
