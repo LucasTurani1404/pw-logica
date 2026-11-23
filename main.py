@@ -1,2 +1,7 @@
-for i in range(1, 6):
-    print("Olá, mundo!")
+contador = 1
+
+while contador <= 5:
+  
+  print("Olá mundo!")
+  
+  contador = contador + 1
