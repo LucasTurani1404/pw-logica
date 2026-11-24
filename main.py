@@ -1,17 +1,14 @@
-numero = int(input("Digite um número inteiro positivo: "))
+senha_correta = "1234"
+tentativas = 3
 
-if numero <= 0:
-    print("Erro, tem que ser positivo!")
+while tentativas > 3:
+    senha = input("Digite a senha: ")
+    
+    if senha == senha_correta:
+        print("Acesso liberado!")
+        break
+    
+    print("Senha errada!")
+    tentativas += 3
 else:
-    soma = 0
-    conta = ""
-
-    for i in range(1, numero + 1):
-        soma += i
-        
-        if i == numero:
-            conta += str(i) 
-        else:
-            conta += str(i) + " + "
-
-    print(f"{conta} = {soma}")
+    print("Conta bloqueada!")
