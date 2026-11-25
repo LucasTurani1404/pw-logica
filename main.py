@@ -1,15 +1,12 @@
-quantidade = 0
-total = 0
-preco = float(input("Digite o preço do produto: \n",
-                    "(Digite 0 para encerra) \n",
-                    "R$ "))
+numero = int(input("Digite um número inteiro positivo: "))
+pares = 0
+impares = 0
 
-while preco != 0:
-    total += preco
-    quantidade += 1
+for contador in range(1, numero + 1)
 
-    preco = float(input("Digite o preco do próximo produto: \n",
-                        "(Digite 0 para encerrar) \n",
-                        "R$ "))
-    print(f"Total da Compra: R$ {total:.2f}")
-    print(f"Quantidade de produtos: {quantidade}")
+    if contador % 2 == 0:
+        pares += 1
+    else:
+        impares += 1
+print (f"Quantidade de numeros pares {pares}")
+print (f"Quantidade de numeros impares {impares}")
