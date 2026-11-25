@@ -1,14 +1,10 @@
-senha_correta = "1234"
-tentativas = 3
+while True:
 
-while tentativas > 3:
-    senha = input("Digite a senha: ")
-    
-    if senha == senha_correta:
-        print("Acesso liberado!")
+    numero = int(input("Digite um número: "))
+
+    if numero < 10:
+        print("Número Aceito!")
         break
-    
-    print("Senha errada!")
-    tentativas += 3
-else:
-    print("Conta bloqueada!")
+    else:
+        print("Número inválido! Tente novamente.")
+
