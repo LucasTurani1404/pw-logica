@@ -47,7 +47,6 @@ print(alunos[0])
 print(alunos[1])
 print(alunos[2])
 print(alunos[3])
-print(alunos[4])
 
 outro
 
@@ -65,3 +64,20 @@ print(f"Temos {quantidade} alunos cadastrados.")
 
 for aluno in alunos:
     print(f"Olá, {aluno}!")
+    
+for contador in range(5):
+    print(alunos[contador])
+    
+    outro
+    
+alunos = ["Pedro", "joão", "Tubas", "Lorenzo"]
+print(alunos)
+alunos.remove("Pedro")
+print(alunos)
+
+outro
+
+alunos = ["Pedro", "joão", "Tubas", "Lorenzo"]
+print(alunos)
+alunos.pop(0)
+print(alunos)
