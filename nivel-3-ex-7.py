@@ -12,7 +12,7 @@ while opcao != 5:
             alunos.append(Cadastrar)
             print(alunos)
     elif opcao == 2:
-        alunos = ["Ana Vitória", "Maria Laura", "Tubas Barbosa", "Lorenzo Barbosa", "Henrique Sicsu", "Arthur Abadi", "Willian Petry", "Ana Clara"]
+        alunos = ["ana vitória", "Maria Laura", "Tubas Barbosa", "Lorenzo Barbosa", "Henrique Sicsu", "Arthur Abadi", "Willian Petry", "Ana Clara"]
         for contador in range(8):
     
                 AnaVi = "Aluno 1: Ana Vitória"
@@ -31,12 +31,14 @@ while opcao != 5:
                 print (Arthur)
                 print (Willian)
                 print (AnaCla)
+       
+       
                        
                 
     elif opcao == 3:
         print(alunos)
-    remov = input("Escolha um para Remover: ")
-    alunos.remove(remov)
+    aluno = input("Escolha um para Remover: ")
+    alunos.remove(aluno)
     print(alunos)
 
     if opcao == 4:
